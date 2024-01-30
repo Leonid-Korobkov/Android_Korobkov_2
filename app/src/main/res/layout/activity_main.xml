@@ -56,7 +56,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="40dp"
         android:backgroundTint="#393AB4"
-        android:text="Save"
+        android:text="Add New Card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -144,5 +144,103 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name on Card"
+            android:textColor="@color/design_default_color_on_secondary" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextText2"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text="Your Card Number" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50">
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exp Date"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/editTextText3"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Your Exp Card Date" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="50">
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/editTextText4"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Your Card CVV" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
